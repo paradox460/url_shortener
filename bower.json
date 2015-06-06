@@ -1,0 +1,26 @@
+{
+  "name": "urlshort",
+  "version": "0.0.0",
+  "authors": [
+    "Jeff Sandberg <paradox460@gmail.com>"
+  ],
+  "description": "A url shortening rails app",
+  "keywords": [
+    "url",
+    "short",
+    "rails"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor/assets/bower-components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "zeroclipboard": "~2.2.0",
+    "bourbon": "~4.2.3"
+  }
+}

@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    title Url short
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    script src="//use.typekit.net/gzj7oro.js"
+    javascript:
+      try{Typekit.load();}catch(e){}
+    = csrf_meta_tags
+  body
+    header
+      #logo =link_to 'URL short', :root
+    #content
+      .container
+        = yield
+    

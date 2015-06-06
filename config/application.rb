@@ -22,5 +22,11 @@ module Urlshort
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+
+    # indented sass syntax
+    config.sass.preferred_syntax = :sass
+
+    # Bower
+    config.assets.paths << Rails.root.join('vendor', 'assets', 'bower-components')
   end
 end

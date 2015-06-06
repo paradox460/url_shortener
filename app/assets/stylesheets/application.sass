@@ -1,0 +1,83 @@
+/*
+ *= require_self
+ */
+
+@import 'bourbon/app/assets/stylesheets/_bourbon.scss'
+@import 'colors'
+
+*
+  box-sizing: border-box
+
+body
+  background: $base01
+  font-family: $helvetica
+  margin: 0
+  margin-top: 50px
+
+header
+  text-align: center
+  margin-bottom: 30px
+
+#logo a
+  font:
+    size: 128px
+    weight: bold
+    family: "ff-cocon-web-pro", $helvetica
+  color: $base0C
+  text-shadow: 3px 3px 0 $base0B, 6px 6px 0 $base0C
+  text-decoration: none
+
+#content
+  background: $base0D
+  min-height: 50vh
+  display: flex
+  justify-content: center
+  align-items: center
+
+#{$all-text-inputs}
+  width: 500px
+  height: 60px
+  border: 5px solid $base0E
+  background: $base06
+  font-size: 30px
+  padding:
+    left: 5px
+    right: 5px
+  transition: all ease-out 250ms
+
+#{$all-text-inputs-focus},
+#{$all-text-inputs-hover},
+#{$all-text-inputs-active}
+  outline: none
+
+form, .formgroup
+  display: flex
+
+  #{$all-buttons}
+    background: $base0E
+    border: none
+    height: 60px
+    color: white
+    font:
+      family: "ff-cocon-web-pro", $helvetica
+      size: 20px
+    padding: 0 10px
+
+  #{$all-buttons-focus},
+  #{$all-buttons-hover},
+  #{$all-buttons-active}
+    outline: none
+
+  #{$all-buttons-focus},
+  #{$all-buttons-hover},
+  button.zeroclipboard-is-hover
+    background: darken($base0E, 10%)
+
+  #{$all-buttons-active}, button.zeroclipboard-is-active
+    background: lighten($base0E, 5%)
+
+.copied
+  box-shadow: inset 0px 0px 15px $base0A
+
+.copy-button
+  min-width: 100px

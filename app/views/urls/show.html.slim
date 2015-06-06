@@ -1,0 +1,3 @@
+.formgroup
+  = text_field_tag('copyable', short_url)
+  = button_tag(t('.copy'), class: 'copy-button', data: { 'clipboard-target' => 'copyable'})
