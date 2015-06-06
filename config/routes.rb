@@ -1,4 +1,13 @@
 Rails.application.routes.draw do
+  # Goto isn't CRUD/RESTful, but it lets us easily let the url shortener
+  # redirect urls such as ur.ls/a3hj to the proper place, while also allowing
+  # url#show to provide a details page, should we decide to add analytics or a
+  # page preview feature
+  resources :urls, only: [:new, :create, :show, :goto] do
+    get 'goto', on: :member
+  end
+  get ':id', to: 'urls#goto', as: :short
+  root 'urls#new'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
