@@ -1,0 +1,21 @@
+{
+  "name": "urlshort",
+  "version": "1.0.0",
+  "description": "a url shortener app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paradox460/url_shortener.git"
+  },
+  "author": "Jeff Sandberg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/paradox460/url_shortener/issues"
+  },
+  "homepage": "https://github.com/paradox460/url_shortener",
+  "dependencies": {
+    "bower": "^1.4.1"
+  },
+  "scripts": {
+    "postinstall": "./node_modules/bower/bin/bower install"
+  }
+}

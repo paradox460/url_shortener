@@ -20,3 +20,4 @@ log
 # Ignore vendor bundle
 /vendor/bundle
 /vendor/assets/bower-components
+node_modules
